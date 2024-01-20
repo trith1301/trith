@@ -60,15 +60,15 @@ Branch name convention: `[Type]/[Short description]`
 **Examples:**
 
 ```git
-git branch -m feature/user-authentication
+git branch feature/user-authentication
 ```
 
 ```git
-git branch -m bugfix/data-loading-issue
+git branch bugfix/data-loading-issue
 ```
 
 ```git
-git branch -m other-change
+git branch other-change
 ```
 
 ### To commit your changes
