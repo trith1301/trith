@@ -1,4 +1,4 @@
-# Tri Tran Personal website 😎
+# Tri Tran Personal Website 😎
 
 ## Information
 
