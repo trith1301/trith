@@ -134,7 +134,7 @@ With task tag: `[Task tag]: [Icon][Short description]`
 **Examples:**
 
 ```git
-git commit -m "🚀 Add user authentication"
+git commit -m "✨ Add user authentication"
 ```
 
 ```git
@@ -142,5 +142,5 @@ git commit -m "🐛 Resolve issue with data not loading"
 ```
 
 ```git
-git commit -m "TASK-456: 🧹 Update dependencies"
+git commit -m "TASK-456: ⬆️ Update dependencies"
 ```
