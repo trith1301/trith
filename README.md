@@ -1,4 +1,4 @@
-# Tri Tran Personal website
+# Tri Tran Personal website 😎
 
 ## Information
 
@@ -18,6 +18,8 @@ Environment requirements:
 | `NPM` | 10.2.4 |
 
 ### Installation
+
+Create a `.env.local` file to configure the environment variables, following the structure of the `.env` file.
 
 Run the command below to install all dependencies:
 
