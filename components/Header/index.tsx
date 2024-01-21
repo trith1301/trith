@@ -25,7 +25,13 @@ const Header = () => {
       <div className="relative flex items-center justify-between container h-[60px] mx-auto px-6">
         <div className="max-w-[80px]">
           <Link href="/">
-            <Image priority={false} className="w-full" src={logo} alt="Logo" sizes="100vw" />
+            <Image
+              priority={false}
+              className="w-full"
+              src={logo}
+              alt="Logo"
+              sizes="100vw"
+            />
           </Link>
         </div>
 

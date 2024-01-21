@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import NextTopLoader from "nextjs-toploader"
 import fonts from "@/configs/fonts"
 import "./globals.css"
 
@@ -9,7 +10,10 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
   <html lang="en">
-    <body className={fonts.className}>{children}</body>
+    <body className={fonts.className}>
+      <NextTopLoader showSpinner={false} color="black" />
+      {children}
+    </body>
   </html>
 )
 
