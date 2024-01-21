@@ -9,39 +9,41 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 import logo from "@/assets/images/logo.svg"
 
 const Header = () => {
-  const [currentRoute, setCurrentRoute] = useState("")
-  const [isHideMenu, setIsHideMenu] = useState(true)
-
-
   const pathname = usePathname()
+  const currentRoute = pathname.split("/")[1]
+
+  const [isHideMenu, setIsHideMenu] = useState(true)
 
   const toggleMenu = () => {
     setIsHideMenu((currentState) => !currentState)
   }
 
-  useEffect(() => {
-    let currentRoute = pathname.split("/")[1]
-    setCurrentRoute(() => currentRoute)
-  }, [])
+  useEffect(() => {}, [])
 
   return (
     <header className="z-50 sticky top-0 left-0 right-0 bg-white shadow-shadow-0">
       <div className="relative flex items-center justify-between container h-[60px] mx-auto px-6">
         <div className="max-w-[80px]">
           <Link href="/">
-            <Image className="w-full" src={logo} alt="Logo" sizes="100vw" />
+            <Image priority={false} className="w-full" src={logo} alt="Logo" sizes="100vw" />
           </Link>
         </div>
-        <div className={"lg:block lg:static lg:bg-none lg:w-[unset] lg:h-[unset] absolute top-full left-0 md:w-screen md:h-screen  w-screen h-screen bg-white" +  (isHideMenu ? " hidden" : "")}>
-          <ul className="flex lg:flex-row flex-col gap-x-8">
+
+        <div
+          className={
+            (isHideMenu ? "hidden " : "") +
+            "absolute top-full left-1/2 translate-x-[-50%] w-screen h-screen bg-white lg:static lg:block lg:translate-x-[unset] lg:bg-none lg:w-[unset] lg:h-[unset]"
+          }
+        >
+          <ul className="flex flex-col gap-x-8 lg:flex-row">
             <li
               className={
-                "text-sm lg:text-left text-center " +
+                "text-sm text-left " +
                 (currentRoute === "" ? "font-black" : "hover:font-black")
               }
             >
               <Link
-                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 py-4 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
+                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 px-6 lg:px-0 py-5 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
                 href="/"
               >
                 About
@@ -49,12 +51,12 @@ const Header = () => {
             </li>
             <li
               className={
-                "text-sm lg:text-left text-center " +
+                "text-sm text-left " +
                 (currentRoute === "contact" ? "font-black" : "hover:font-black")
               }
             >
               <Link
-                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 py-4 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
+                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 px-6 lg:px-0 py-5 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
                 href="/contact"
               >
                 Contact
@@ -62,14 +64,14 @@ const Header = () => {
             </li>
             <li
               className={
-                "text-sm lg:text-left text-center " +
+                "text-sm text-left " +
                 (currentRoute === "projects"
                   ? "font-black"
                   : "hover:font-black")
               }
             >
               <Link
-                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 py-4 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
+                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 px-6 lg:px-0 py-5 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
                 href="/projects"
               >
                 Projects
@@ -77,14 +79,14 @@ const Header = () => {
             </li>
             <li
               className={
-                "text-sm lg:text-left text-center " +
+                "text-sm text-left " +
                 (currentRoute === "experiences"
                   ? "font-black"
                   : "hover:font-black")
               }
             >
               <Link
-                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 py-4 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
+                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 px-6 lg:px-0 py-5 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
                 href="/experiences"
               >
                 Experiences
@@ -92,7 +94,8 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <button onClick={toggleMenu} type="button" className="lg:hidden block">
+
+        <button onClick={toggleMenu} type="button" className="block lg:hidden">
           {isHideMenu ? (
             <Bars3Icon className="h-6 w-6" />
           ) : (
