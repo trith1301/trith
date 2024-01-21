@@ -38,7 +38,7 @@ const Header = () => {
           <ul className="flex flex-col gap-x-8 lg:flex-row">
             <li
               className={
-                "text-sm text-left " +
+                "container mx-auto lg:mx-[unset] text-sm text-left " +
                 (currentRoute === "" ? "font-black" : "hover:font-black")
               }
             >
@@ -51,7 +51,7 @@ const Header = () => {
             </li>
             <li
               className={
-                "text-sm text-left " +
+                "container mx-auto lg:mx-[unset] text-sm text-left " +
                 (currentRoute === "contact" ? "font-black" : "hover:font-black")
               }
             >
@@ -64,7 +64,7 @@ const Header = () => {
             </li>
             <li
               className={
-                "text-sm text-left " +
+                "container mx-auto lg:mx-[unset] text-sm text-left " +
                 (currentRoute === "projects"
                   ? "font-black"
                   : "hover:font-black")
@@ -79,7 +79,7 @@ const Header = () => {
             </li>
             <li
               className={
-                "text-sm text-left " +
+                "container mx-auto lg:mx-[unset] text-sm text-left " +
                 (currentRoute === "experiences"
                   ? "font-black"
                   : "hover:font-black")
