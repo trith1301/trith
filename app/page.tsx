@@ -1,12 +1,14 @@
-import Header from "@/components/Header"
+import Header from "@/app/components/Header"
 
-const Home = () => {
+const About = () => {
   return (
-    <div className="h-[2000px]">
+    <div>
       <Header />
-      <p className="mt-10 text-center">About</p>
+      <div className="container mx-auto px-6">
+        <p className="text-sm mt-10">About</p>
+      </div>
     </div>
   )
 }
 
-export default Home
+export default About

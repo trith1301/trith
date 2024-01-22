@@ -1,10 +1,12 @@
-import Header from "@/components/Header"
+import Header from "@/app/components/Header"
 
 const Contact = () => {
   return (
-    <div className="h-[2000px]">
+    <div>
       <Header />
-      <p className="mt-10 text-center">Contact</p>
+      <div className="container mx-auto px-6">
+        <p className="text-sm mt-10">Contact</p>
+      </div>
     </div>
   )
 }
