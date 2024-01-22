@@ -42,8 +42,10 @@ Create new branch from the **development** branch
 Branch name convention: `[Type]/[Short description]`
 | Types | Description |
 |------------|-------------|
+| `release` | Release branches, for releasing new version |
 | `feature` | Feature branches, for developing new features |
 | `bugfix`  | Bugfix branches, for fixing bugs |
+| `hotfix`  | Hotfix branches, for hot fixing |
 | `docs`    | Documentation branches, for updating documentation |
 | `style`   | Style branches, for code style changes |
 | `refactor`| Refactor branches, for code refactoring |

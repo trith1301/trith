@@ -1,7 +1,7 @@
+import "./globals.css"
+import fonts from "@/configs/fonts"
 import type { Metadata } from "next"
 import NextTopLoader from "nextjs-toploader"
-import fonts from "@/configs/fonts"
-import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Tri Tran Personal Site",
