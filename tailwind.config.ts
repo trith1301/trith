@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       boxShadow: {
         'shadow-0': '0px 1px 4px rgba(0, 0, 0, 0.16)'
+      },
+      height: {
+        'header-menu': 'calc(100vh - 60px)'
       }
     },
   },
