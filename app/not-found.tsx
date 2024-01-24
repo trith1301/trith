@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 
 const NotFound = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center text-center">
+    <div className="container mx-auto pt-20 text-center">
       <h1 className="inline-block text-[24px] font-[500] leading-[49px]">
         404
       </h1>
