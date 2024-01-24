@@ -38,7 +38,7 @@ const Header = () => {
         <div
           className={
             (isHideMenu ? "hidden " : "") +
-            "absolute top-full left-1/2 translate-x-[-50%] w-screen h-screen bg-white lg:static lg:block lg:translate-x-[unset] lg:bg-none lg:w-[unset] lg:h-[unset]"
+            "absolute top-full left-1/2 translate-x-[-50%] w-screen h-header-menu bg-white lg:static lg:block lg:translate-x-[unset] lg:bg-none lg:w-[unset] lg:h-[unset]"
           }
         >
           <ul className="flex flex-col gap-x-8 lg:flex-row">
