@@ -1,5 +1,5 @@
-import { JetBrains_Mono } from "next/font/google"
+import { Open_Sans } from "next/font/google"
 
-const fonts = JetBrains_Mono({ subsets: ["vietnamese"] })
+const fonts = Open_Sans({ subsets: ["vietnamese"] })
 
 export default fonts

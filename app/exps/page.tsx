@@ -1,11 +1,11 @@
-import Header from "@/app/components/Header"
+import Header from "@/app/components/UI/Header"
 
 const Experiences = () => {
   return (
     <div>
       <Header />
-      <div className="container mx-auto px-6">
-        <p className="text-sm mt-10">Experiences</p>
+      <div className="container mt-6 mx-auto px-6">
+        <p className="text-sm">Experiences</p>
       </div>
     </div>
   )
