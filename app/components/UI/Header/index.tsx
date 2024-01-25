@@ -2,11 +2,10 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { usePathname } from "next/navigation"
-import { useEffect, useState, useRef } from "react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
-
+import { useEffect, useState } from "react"
 import logo from "@/assets/images/logo.svg"
+import { usePathname } from "next/navigation"
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 
 const Header = () => {
   const pathname = usePathname()
@@ -26,8 +25,8 @@ const Header = () => {
         <div className="max-w-[80px]">
           <Link href="/">
             <Image
-              priority={false}
               className="w-full"
+              priority={false}
               src={logo}
               alt="Logo"
               sizes="100vw"
@@ -44,8 +43,8 @@ const Header = () => {
           <ul className="flex flex-col gap-x-8 lg:flex-row">
             <li
               className={
-                "container mx-auto lg:mx-[unset] text-sm text-left " +
-                (currentRoute === "" ? "font-black" : "hover:font-black")
+                "container mx-auto lg:mx-[unset] text-sm text-left font-black text-black " +
+                (currentRoute === "" ? "text-gray-400" : "hover:text-gray-400")
               }
             >
               <Link
@@ -57,8 +56,8 @@ const Header = () => {
             </li>
             <li
               className={
-                "container mx-auto lg:mx-[unset] text-sm text-left " +
-                (currentRoute === "contact" ? "font-black" : "hover:font-black")
+                "container mx-auto lg:mx-[unset] text-sm text-left font-black " +
+                (currentRoute === "contact" ? "text-gray-400" : "hover:text-gray-400")
               }
             >
               <Link
@@ -70,10 +69,10 @@ const Header = () => {
             </li>
             <li
               className={
-                "container mx-auto lg:mx-[unset] text-sm text-left " +
+                "container mx-auto lg:mx-[unset] text-sm text-left font-black " +
                 (currentRoute === "projects"
-                  ? "font-black"
-                  : "hover:font-black")
+                  ? "text-gray-400"
+                  : "hover:text-gray-400")
               }
             >
               <Link
@@ -85,10 +84,8 @@ const Header = () => {
             </li>
             <li
               className={
-                "container mx-auto lg:mx-[unset] text-sm text-left " +
-                (currentRoute === "exps"
-                  ? "font-black"
-                  : "hover:font-black")
+                "container mx-auto lg:mx-[unset] text-sm text-left font-black " +
+                (currentRoute === "exps" ? "text-gray-400" : "hover:text-gray-400")
               }
             >
               <Link

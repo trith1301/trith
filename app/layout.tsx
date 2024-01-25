@@ -1,4 +1,4 @@
-import "./globals.css"
+import "@/app/globals.css"
 import fonts from "@/configs/fonts"
 import type { Metadata } from "next"
 import NextTopLoader from "nextjs-toploader"
