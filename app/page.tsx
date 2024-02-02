@@ -1,11 +1,12 @@
-import Header from "@/app/components/Header"
+import Header from "@/app/components/UI/Header"
+import ShortIntro from "./components/Pages/About/ShortIntro"
 
 const About = () => {
   return (
     <div>
       <Header />
-      <div className="container mx-auto px-6">
-        <p className="text-sm mt-10">About</p>
+      <div className="container mt-6 mx-auto px-6">
+        <ShortIntro />
       </div>
     </div>
   )

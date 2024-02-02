@@ -75,9 +75,9 @@ git branch other-change
 
 ### To commit your changes
 
-Commit message convention: `[Icon][Short description]`
+Commit message convention: `[Emoji][Short description]`
 
-With task tag: `[Task tag]: [Icon][Short description]`
+With task tag: `[Task tag]: [Emoji][Short description]`
 
 |   Commit type              | Emoji                                         |
 |:---------------------------|:----------------------------------------------|
