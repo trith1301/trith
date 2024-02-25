@@ -10,4 +10,6 @@ export type Project = {
   stacks: string[]
   description: string
   thumbnail: string
+  gitHubURL: string
+  deployedURL: string
 }
