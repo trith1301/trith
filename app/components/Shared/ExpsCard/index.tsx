@@ -13,7 +13,7 @@ import {
 import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { nanoid } from "nanoid"
 
-const ProjectCard = ({ props }: any) => {
+const ExpsCard = ({ props }: any) => {
   return (
     <Card
       direction={{ base: "column", sm: "row" }}
@@ -30,26 +30,24 @@ const ProjectCard = ({ props }: any) => {
         <CardBody>
           <Heading pb="2" size="sm">
             <Link href={props.deployedURL} textColor="#3498db" target="_blank">
-              {props.title}
+              {props.companyName}
             </Link>
           </Heading>
-          <Text pb="2" fontSize="xs" fontWeight="semibold" opacity={0.6}>
-            {props.startDate}
+          <Heading pb="2" size="sm">
+          {props.jobTitle}
+          </Heading>
+          <Text pb="5" fontSize="xs" fontWeight="semibold" opacity={0.6}>
+          {props.startDate}
             {props.endDate ? ` - ${props.endDate}` : ""}
           </Text>
-          <Text pb="2">{props.description}</Text>
-          <Flex flexWrap={"wrap"} columnGap="10px" rowGap="10px">
-            {props.stacks.length
-              ? props.stacks.map((stack: any) => (
-                  <Badge key={nanoid()}>{stack}</Badge>
-                ))
-              : ""}
-          </Flex>
+          <Text pb="2" fontSize="sm">
+            {props.description}
+          </Text>
         </CardBody>
         <CardFooter>
           <Text fontSize="xs">
-            <Link href={props.gitHubURL} target="_blank">
-              View Source <ExternalLinkIcon />
+            <Link href={props.companyURL} target="_blank">
+              View Company <ExternalLinkIcon />
             </Link>
           </Text>
         </CardFooter>
@@ -58,4 +56,4 @@ const ProjectCard = ({ props }: any) => {
   )
 }
 
-export default ProjectCard
+export default ExpsCard
