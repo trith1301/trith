@@ -1,0 +1,56 @@
+{
+  "status": "success",
+  "apiRoute": "/api/projects",
+  "count": 5,
+  "type": "list",
+  "data": [
+    {
+      "title": "Project 1",
+      "startDate": "mm/yyyy",
+      "endDate": "mm/yyyy",
+      "stacks": ["Angular", "ChakraUI", "React"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
+      "thumbnail": "/images/resource-thumbnail.png"
+    },
+    {
+      "title": "Project 2",
+      "startDate": "mm/yyyy",
+      "endDate": "mm/yyyy",
+      "stacks": ["Angular", "ChakraUI", "React"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
+      "thumbnail": "/images/resource-thumbnail.png"
+    },
+    {
+      "title": "Project 3",
+      "startDate": "mm/yyyy",
+      "endDate": "mm/yyyy",
+      "stacks": ["Angular", "ChakraUI", "React"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
+      "thumbnail": "/images/resource-thumbnail.png"
+    },
+    {
+      "title": "Project 4",
+      "startDate": "mm/yyyy",
+      "endDate": "mm/yyyy",
+      "stacks": ["Angular", "ChakraUI", "React"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
+      "thumbnail": "/images/resource-thumbnail.png"
+    },
+    {
+      "title": "Project 5",
+      "startDate": "mm/yyyy",
+      "endDate": "mm/yyyy",
+      "stacks": ["Angular", "ChakraUI", "React"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
+      "thumbnail": "/images/resource-thumbnail.png"
+    },
+    {
+      "title": "Project 6",
+      "startDate": "mm/yyyy",
+      "endDate": "mm/yyyy",
+      "stacks": ["Angular", "ChakraUI", "React"],
+      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
+      "thumbnail": "/images/resource-thumbnail.png"
+    }
+  ]
+}

@@ -9,14 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        'shadow-0': '0px 1px 4px rgba(0, 0, 0, 0.16)'
+        "shadow-0": "0px 1px 4px rgba(0, 0, 0, 0.16)",
       },
       height: {
-        'header-menu': 'calc(100vh - 60px)'
-      }
+        "header-menu": "calc(100vh - 60px)",
+      },
     },
   },
   plugins: [],
-  safelist: ['hidden']
+  safelist: ["hidden"],
 }
 export default config

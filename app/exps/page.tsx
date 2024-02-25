@@ -1,4 +1,4 @@
-import Header from "@/app/components/UI/Header"
+import Header from "@/app/components/Shared/Header"
 
 const Experiences = () => {
   return (
