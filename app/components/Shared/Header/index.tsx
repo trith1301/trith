@@ -3,7 +3,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useEffect, useState } from "react"
-import logo from "@/assets/images/logo.svg"
+import logo from "@/assets/images/logos/logo.svg"
 import { usePathname } from "next/navigation"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 
@@ -26,7 +26,7 @@ const Header = () => {
           <Link href="/">
             <Image
               className="w-full"
-              priority={false}
+              priority={true}
               src={logo}
               alt="Logo"
               sizes="100vw"
@@ -57,19 +57,6 @@ const Header = () => {
             <li
               className={
                 "container mx-auto lg:mx-[unset] text-sm text-left font-black " +
-                (currentRoute === "contact" ? "text-gray-400" : "hover:text-gray-400")
-              }
-            >
-              <Link
-                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 px-6 lg:px-0 py-5 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
-                href="/contact"
-              >
-                Contact
-              </Link>
-            </li>
-            <li
-              className={
-                "container mx-auto lg:mx-[unset] text-sm text-left font-black " +
                 (currentRoute === "projects"
                   ? "text-gray-400"
                   : "hover:text-gray-400")
@@ -85,7 +72,9 @@ const Header = () => {
             <li
               className={
                 "container mx-auto lg:mx-[unset] text-sm text-left font-black " +
-                (currentRoute === "exps" ? "text-gray-400" : "hover:text-gray-400")
+                (currentRoute === "exps"
+                  ? "text-gray-400"
+                  : "hover:text-gray-400")
               }
             >
               <Link
