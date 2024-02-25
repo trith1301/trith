@@ -1,5 +1,5 @@
-import Header from "@/app/components/UI/Header"
-import ShortIntro from "./components/Pages/About/ShortIntro"
+import Header from "@/app/components/Shared/Header"
+import ShortIntro from "@/app/components/Pages/About/ShortIntro"
 
 const About = () => {
   return (
