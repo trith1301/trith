@@ -3,9 +3,10 @@
 import { ReactNode, useEffect, useState } from "react"
 import { Heading, Skeleton } from "@chakra-ui/react"
 import Header from "@/app/components/Shared/Header"
-import { API_URL } from "@/core/constants"
+import { API_URL, SKELETON_COUNT } from "@/core/constants"
 import ProjectCard from "@/app/components/Shared/ProjectCard"
 import ProjectCardSkeleton from "../components/Shared/Skeletons/ProjectCard"
+import { nanoid } from "nanoid"
 
 const Projects = () => {
   const [projects, setProjects] = useState([])
@@ -13,15 +14,19 @@ const Projects = () => {
   const getProjects = async () => fetch(`${API_URL}/projects`)
 
   const renderProjectCard = (projects: any[]): ReactNode[] => {
-    const cards = []
-
     if (projects.length) {
       return projects.map((project) => (
-        <ProjectCard key={project.title} props={project} />
+        <ProjectCard key={nanoid()} props={project} />
       ))
     }
 
-    return projects.map((project, index) => [])
+    const skeletonCards = []
+
+    for (let i = 0; i <= SKELETON_COUNT; i++) {
+      skeletonCards.push(<ProjectCardSkeleton />)
+    }
+
+    return skeletonCards
   }
 
   useEffect(() => {
@@ -40,7 +45,7 @@ const Projects = () => {
   return (
     <div>
       <Header />
-      <div className="container mt-6 mx-auto px-6">
+      <div className="container mt-6 mx-auto px-6 pb-44">
         <Heading as="h3" fontSize="xl" mb="30px">
           {projects.length ? (
             `There are ${projects.length} projects currently completed or in progress`

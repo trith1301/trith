@@ -5,52 +5,44 @@
   "type": "list",
   "data": [
     {
-      "title": "Project 1",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
+      "title": "My Personal Website",
+      "startDate": "01/2024",
+      "endDate": "Now",
+      "stacks": ["NextJS", "ChakraUI", "MySQL", "Prisma"],
+      "description": "This is my personal website.",
+      "thumbnail": "/images/resource-thumbnail.png",
+      "gitHubURL": "https://github.com/trith1301/trith",
+      "deployedURL": "https://www.trith13102.dev"
     },
     {
-      "title": "Project 2",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
+      "title": "The Band Landing",
+      "startDate": "01/2024",
+      "endDate": "02/2024",
+      "stacks": ["Angular"],
+      "description": "This is a simple project, utilizing the Angular framework.",
+      "thumbnail": "/images/resource-thumbnail.png",
+      "gitHubURL": "https://github.com/trith1301/the-band",
+      "deployedURL": "https://theband.trith13102.dev"
     },
     {
-      "title": "Project 3",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
+      "title": "Apps Cyclone Landing Page",
+      "startDate": "02/2023",
+      "endDate": "",
+      "stacks": ["HTML", "JavaScript", "TailwindCSS"],
+      "description": "This is a simple landing page project for the internship program at AppsCyclone JSC.",
+      "thumbnail": "/images/resource-thumbnail.png",
+      "gitHubURL": "https://github.com/trith1301/apps-cyclone",
+      "deployedURL": "https://acs.trith13102.dev"
     },
     {
-      "title": "Project 4",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
-    },
-    {
-      "title": "Project 5",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
-    },
-    {
-      "title": "Project 6",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
+      "title": "GEEKUP Todo App",
+      "startDate": "02/2023",
+      "endDate": "",
+      "stacks": ["HTML", "JavaScript", "TailwindCSS"],
+      "description": "This is a simple Todo App using the ReactJS Framework.",
+      "thumbnail": "/images/resource-thumbnail.png",
+      "gitHubURL": "https://geekup.trith13102.dev",
+      "deployedURL": "https://geekup.trith13102.dev"
     }
   ]
 }
