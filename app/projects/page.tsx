@@ -5,7 +5,7 @@ import { Heading, Skeleton } from "@chakra-ui/react"
 import Header from "@/app/components/Shared/Header"
 import { API_URL, SKELETON_COUNT } from "@/core/constants"
 import ProjectCard from "@/app/components/Shared/ProjectCard"
-import ProjectCardSkeleton from "../components/Shared/Skeletons/ProjectCard"
+import ProjectCardSkeleton from "../components/Shared/Skeletons/Card"
 import { nanoid } from "nanoid"
 
 const Projects = () => {
