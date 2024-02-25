@@ -57,21 +57,6 @@ const Header = () => {
             <li
               className={
                 "container mx-auto lg:mx-[unset] text-sm text-left font-black " +
-                (currentRoute === "projects"
-                  ? "text-gray-400"
-                  : "hover:text-gray-400")
-              }
-            >
-              <Link
-                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 px-6 lg:px-0 py-5 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
-                href="/projects"
-              >
-                Projects
-              </Link>
-            </li>
-            <li
-              className={
-                "container mx-auto lg:mx-[unset] text-sm text-left font-black " +
                 (currentRoute === "exps"
                   ? "text-gray-400"
                   : "hover:text-gray-400")
@@ -82,6 +67,21 @@ const Header = () => {
                 href="/exps"
               >
                 Experiences
+              </Link>
+            </li>
+            <li
+              className={
+                "container mx-auto lg:mx-[unset] text-sm text-left font-black " +
+                (currentRoute === "projects"
+                  ? "text-gray-400"
+                  : "hover:text-gray-400")
+              }
+            >
+              <Link
+                className="lg:inline block lg:w-[unset] w-full lg:h-[unset] h-full lg:py-0 px-6 lg:px-0 py-5 lg:border-b-0 border-b-[1px] border-b-slate-100 lg:hover:bg-[unset] hover:bg-slate-50"
+                href="/projects"
+              >
+                Projects
               </Link>
             </li>
           </ul>

@@ -23,7 +23,7 @@ const Experiences = () => {
     const skeletonCards = []
 
     for (let i = 0; i <= SKELETON_COUNT; i++) {
-      skeletonCards.push(<ProjectCardSkeleton />)
+      skeletonCards.push(<ProjectCardSkeleton key={nanoid()} />)
     }
 
     return skeletonCards
