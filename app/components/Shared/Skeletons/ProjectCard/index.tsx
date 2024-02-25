@@ -6,29 +6,14 @@ import {
   Stack,
   CardBody,
   Skeleton,
+  CardFooter,
+  SkeletonText,
 } from "@chakra-ui/react"
+import resourceImage from "@/assets/images/resources/resource-thumbnail.png"
 
-const ProjectCardSkeleton = ({ props }: any) => {
+const ProjectCardSkeleton = () => {
   return (
-    <Card
-      direction={{ base: "column", sm: "row" }}
-      overflow="hidden"
-      variant="outline"
-    >
-      <Image
-        objectFit="cover"
-        maxW={{ base: "100%", sm: "200px" }}
-        src={props.thumbnail}
-        alt="Caffe Latte"
-      />
-
-      <Stack>
-        <CardBody>
-          <Heading size="md">{props.title}</Heading>
-          <Text py="2">{props.description}</Text>
-        </CardBody>
-      </Stack>
-    </Card>
+    <Skeleton h="120px"/>
   )
 }
 
