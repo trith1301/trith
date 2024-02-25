@@ -5,44 +5,22 @@
   "type": "list",
   "data": [
     {
-      "title": "Project 1",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
+      "companyName": "SnapRevise - EdTech Company",
+      "jobTitle": "Software Developer Internship",
+      "startDate": "01/2023",
+      "endDate": "-03/2023",
+      "description": "This is my first professional working experience as a FrontEnd Developer. At VinHMS, I was involved in developing new features for their products.",
+      "thumbnail": "/images/resource-thumbnail.png",
+      "companyURL": "https://snaprevise.co.uk"
     },
     {
-      "title": "Project 2",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
-    },
-    {
-      "title": "Project 3",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
-    },
-    {
-      "title": "Project 4",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
-    },
-    {
-      "title": "Project 5",
-      "startDate": "mm/yyyy",
-      "endDate": "mm/yyyy",
-      "stacks": ["Angular", "ChakraUI", "React"],
-      "description": "Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut labore et",
-      "thumbnail": "/images/resource-thumbnail.png"
+      "companyName": "VinHMS - Hospitality Management Products Company",
+      "jobTitle": "Software Developer Internship",
+      "startDate": "01/2023",
+      "endDate": "-03/2023",
+      "description": "This is my first professional working experience as a FrontEnd Developer. At VinHMS, I was involved in developing new features for their products.",
+      "thumbnail": "/images/resource-thumbnail.png",
+      "companyURL": "https://vinhms.com"
     }
   ]
 }
