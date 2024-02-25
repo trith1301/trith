@@ -28,16 +28,14 @@ const ExpsCard = ({ props }: any) => {
       />
       <Stack>
         <CardBody>
-          <Heading pb="2" size="sm">
-            <Link href={props.deployedURL} textColor="#3498db" target="_blank">
-              {props.companyName}
-            </Link>
+          <Heading pb="2" fontSize="md" fontWeight={"bold"} textColor="#3498db">
+            {props.companyName}
           </Heading>
           <Heading pb="2" size="sm">
-          {props.jobTitle}
+            {props.jobTitle}
           </Heading>
           <Text pb="5" fontSize="xs" fontWeight="semibold" opacity={0.6}>
-          {props.startDate}
+            {props.startDate}
             {props.endDate ? ` - ${props.endDate}` : ""}
           </Text>
           <Text pb="2" fontSize="sm">
