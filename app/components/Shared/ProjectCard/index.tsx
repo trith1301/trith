@@ -28,16 +28,33 @@ const ProjectCard = ({ props }: any) => {
       />
       <Stack>
         <CardBody>
-          <Heading pb="2" size="sm">
-            <Link href={props.deployedURL} textColor="#3498db" target="_blank">
-              {props.title}
-            </Link>
-          </Heading>
+          <Link
+            href={props.deployedURL}
+            textColor="#3498db"
+            target="_blank"
+            fontSize="md"
+            fontWeight={"bold"}
+          >
+            {props.title + " "}
+            <ExternalLinkIcon />
+          </Link>{" "}
+          {props.isLived && (
+            <Badge variant="outline" colorScheme="green">
+              Live
+            </Badge>
+          )}
+          {props.isOnProgress && (
+            <Badge ml="4px" variant="outline" colorScheme="cyan">
+              Developing
+            </Badge>
+          )}
           <Text pb="2" fontSize="xs" fontWeight="semibold" opacity={0.6}>
             {props.startDate}
             {props.endDate ? ` - ${props.endDate}` : ""}
           </Text>
-          <Text pb="2">{props.description}</Text>
+          <Text pb="2" fontSize="sm">
+            {props.description}
+          </Text>
           <Flex flexWrap={"wrap"} columnGap="10px" rowGap="10px">
             {props.stacks.length
               ? props.stacks.map((stack: any) => (

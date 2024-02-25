@@ -6,42 +6,62 @@
   "data": [
     {
       "title": "My Personal Website",
+      "isLived": true,
+      "isOnProgress": true,
       "startDate": "01/2024",
       "endDate": "Now",
-      "stacks": ["NextJS", "ChakraUI", "MySQL", "Prisma"],
-      "description": "This is my personal website.",
+      "stacks": ["NextJS", "ChakraUI", "TailwindCSS", "MySQL", "Prisma"],
+      "description": "This is my personal website",
       "thumbnail": "/images/trith13102-dev-thumbnail.png",
       "gitHubURL": "https://github.com/trith1301/trith",
       "deployedURL": "https://www.trith13102.dev"
     },
     {
+      "title": "Simple Books API",
+      "isLived": true,
+      "isOnProgress": true,
+      "startDate": "02/2024",
+      "endDate": "Now",
+      "stacks": ["NestJS", "MySQL", "Prisma"],
+      "description": "This is a simple project utilizing the NestJS framework",
+      "thumbnail": "/images/books-api-thumbnail.png",
+      "gitHubURL": "https://github.com/trith1301/books-api",
+      "deployedURL": "https://books-api-1nre.onrender.com/books"
+    },
+    {
       "title": "The Band Landing",
+      "isLived": true,
+      "isOnProgress": false,
       "startDate": "01/2024",
       "endDate": "02/2024",
       "stacks": ["Angular"],
-      "description": "This is a simple project, utilizing the Angular framework.",
+      "description": "This is a simple project, utilizing the Angular framework",
       "thumbnail": "/images/theband-thumbnail.png",
       "gitHubURL": "https://github.com/trith1301/the-band",
       "deployedURL": "https://theband.trith13102.dev"
     },
     {
       "title": "Apps Cyclone Landing Page",
+      "isLived": true,
+      "isOnProgress": false,
       "startDate": "02/2023",
       "endDate": "",
       "stacks": ["HTML", "JavaScript", "TailwindCSS"],
-      "description": "This is a simple landing page project for the internship program at AppsCyclone JSC.",
+      "description": "This is a simple landing page project for the internship program at AppsCyclone JSC",
       "thumbnail": "/images/acs-thumbnail.png",
       "gitHubURL": "https://github.com/trith1301/apps-cyclone",
       "deployedURL": "https://acs.trith13102.dev"
     },
     {
       "title": "GEEKUP Todo App",
+      "isLived": true,
+      "isOnProgress": false,
       "startDate": "02/2023",
       "endDate": "",
       "stacks": ["HTML", "JavaScript", "TailwindCSS"],
-      "description": "This is a simple Todo App using the ReactJS Framework.",
+      "description": "This is a simple Todo App using the ReactJS Framework",
       "thumbnail": "/images/geekup-thumbnail.png",
-      "gitHubURL": "https://geekup.trith13102.dev",
+      "gitHubURL": "https://github.com/trith1301/todo-app",
       "deployedURL": "https://geekup.trith13102.dev"
     }
   ]
