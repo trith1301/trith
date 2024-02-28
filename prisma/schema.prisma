@@ -1,0 +1,38 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "mysql"
+  url               = env("DB_URL")
+  shadowDatabaseUrl = env("SHADOW_DB_URL")
+}
+
+model Experience {
+  id            Int           @default(autoincrement()) @id
+  companyName   String        @unique
+  jobTitle      String
+  startDate     String
+  endDate       String
+  description   String
+  thumbnail     String
+  companyURL    String
+  createdAt     DateTime?     @default(now())
+  updatedAt     DateTime?     @default(now()) @map(name: "update_date")
+}
+
+model Project {
+  id            Int           @default(autoincrement()) @id
+  title         String        @unique
+  isLived       String
+  isOnProgress  String
+  startDate     String
+  endDate       String
+  stacks        String
+  description   String
+  thumbnail     String
+  gitHubURL     String
+  deployedURL   String
+  createdAt     DateTime?     @default(now())
+  updatedAt     DateTime?     @default(now())
+}
