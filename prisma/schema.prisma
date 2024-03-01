@@ -6,6 +6,7 @@ datasource db {
   provider          = "mysql"
   url               = env("DB_URL")
   shadowDatabaseUrl = env("SHADOW_DB_URL")
+  relationMode = "prisma"
 }
 
 model Experience {
