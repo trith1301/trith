@@ -11,8 +11,6 @@
     "db-migrate:development": "dotenv -e .env.local -- npx prisma migrate dev"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^2.1.1",
-    "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@heroicons/react": "^2.1.1",
