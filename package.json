@@ -11,13 +11,15 @@
     "db-migrate:development": "dotenv -e .env.local -- npx prisma migrate dev"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.3",
+    "@chakra-ui/next-js": "^2.2.0",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@heroicons/react": "^2.1.1",
     "@next/third-parties": "^14.1.0",
     "@prisma/client": "^5.10.2",
     "@react-spring/web": "^9.7.3",
-    "framer-motion": "^11.0.6",
+    "framer-motion": "^11.0.8",
     "nanoid": "^5.0.6",
     "next": "14.1.0",
     "nextjs-toploader": "^1.6.4",
