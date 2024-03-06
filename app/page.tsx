@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <div className="container mt-6 mx-auto px-6">
-        <Heading>🎉 ChakraUI has been Integrated!</Heading>
+        <Heading fontSize="lg">🎉 Welcome to Tri Tran Personal Website!</Heading>
       </div>
     </div>
   )
